@@ -1,0 +1,76 @@
+{
+    "burgers": [
+        {
+            "burger": "backcountry",
+            "ingredients": "LTOP, american cheese, backcountry sauce",
+            "price": 7
+        },
+        {
+            "burger": "double backcountry",
+            "ingredients": "2 patties, LTOP, american cheese, backcountry sauce",
+            "price": 9
+        },
+        {
+            "burger": "trapper",
+            "ingredients": "yellowstone grassfed beef patty, sautéed onion, mushrooms, swiss cheese, beef jus",
+            "price": 10
+        },
+        {
+            "burger": "wessel",
+            "ingredients": "manzanilla olives, sharp cheddar, backcountry sauce, leaf lettuce",
+            "price": 8
+        },
+        {
+            "burger": "daybreak",
+            "ingredients": "burger topped with an omelet of peppers, green onion, beefsteak tomato, cheddar sauce",
+            "price": 9
+        },
+        {
+            "burger": "chile verde",
+            "ingredients": "avocado, beefsteak tomato, pepperjack cheese, house chili verde",
+            "price": 9
+        },
+        {
+            "burger": "the pittsburgh",
+            "ingredients": "house fries, slaw, beefsteak tomato, provolone, backcountry sauce",
+            "price": 9
+        },
+        {
+            "burger": "wildfire",
+            "ingredients": "manzanilla olives, sharp cheddar, backcountry sauce, leaf lettuce",
+            "price": 9
+        }
+    ],
+    "sandwiches": [
+        {
+            "sandwich": "carson",
+            "ingredients": "ground beef, pork, and bacon sloppy joe, house slaw, pickles",
+            "price": 8
+        },
+        {
+            "sandwich": "fremont",
+            "ingredients": "fried chicken, lettuce, pickle, swiss, herbed aioli",
+            "price": 8
+        },
+        {
+            "sandwich": "electric",
+            "ingredients": "fried nashville hot chicken, pickle, provolone, slaw",
+            "price": 9
+        },
+        {
+            "sandwich": "fishtail",
+            "ingredients": "seared tuna, pickled cucumber, radish, wasabi aioli, slaw",
+            "price": 10
+        },
+        {
+            "sandwich": "unicorn",
+            "ingredients": "grilled pb & j",
+            "price": 4
+        },
+        {
+            "sandwich": "snowflake",
+            "ingredients": "texas toast, provolone, cheddar, american cheese ",
+            "price": 4
+        }
+    ]
+}

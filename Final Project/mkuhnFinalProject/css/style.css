@@ -1,0 +1,224 @@
+/* Style sheet for Backcountry Burgers */
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font: 16px serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Site Styles*/
+.wrapper {
+    background: #333;
+}
+.col-full {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.content-wrap {
+    padding: 40px;
+    min-height: 610px;
+}
+p {
+    font-family: "Courier New", Courier;
+    color: #eee;
+}
+h2 {
+    font: 50px "Courier New";
+    color: #d68a13;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #d68a13;
+    font-family: "Courier New";
+}
+/*Header Styles*/
+.header {
+    background: #525050;
+    min-height: 140px;
+}
+.header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo {
+    float: left;
+    margin-left: 30px;
+}
+.nav {
+    float: right;
+    max-width: 990px;
+    margin-top: 75px;
+}
+.nav li {
+    float: left;
+    font-size: 35px;
+    padding: 10px 35px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #d68a13;
+    font-family: "Courier New", Courier;
+}
+.nav li a:hover {
+    color: #f19609;
+    border-bottom: 3px solid #f19609;
+}
+
+.carousel {
+    width: 1400px;
+    margin: 0 auto;
+}
+.home-info p {
+    font: 42px "Courier New";
+    text-align: center;
+    color: #ccc;
+}
+
+/*Footer Styles*/
+.footer {
+    height: 100px;
+    background: #525050;
+}
+.copyright {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 33px;
+}
+.copyright p {
+    font: 30px "Courier New";
+}
+
+/* About Page Styles*/
+#map {
+    width: 600px;
+    height: 400px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-item {
+    flex: 0 1 600px;
+}
+.about-info p {
+    font-size: 30px;
+}
+
+/*Menu Page Styles*/
+#burger-container, #sandwich-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.burgers, .sandwiches {
+    flex: 0 1 390px;
+}
+.burger-outer-container, .sandwich-outer-container {
+    margin-bottom: 40px;
+}
+
+/* Gallery Page Styles */
+.flickr-gallery {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.flickr-image {
+    flex: 0 1 200px;
+    margin: 10px;
+}
+
+/* Contact Page Styles */
+.form-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+#contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+label, input, textarea {
+    display: block;
+    width: 100%;
+}
+textarea {
+    min-height: 200px;
+    background: #ccc;
+    font: 25px "Courier New";
+}
+input {
+    font: 25px "Courier New";
+    padding: 5px;
+    background: #ccc;
+    border: none;
+}
+label {
+    color: #d68a13;
+    font: 25px "Courier New";
+    padding: 5px;
+}
+#contact-form button {
+    padding: 8px 20px;
+    font: bold 15px "Courier New";
+    margin-top: 10px;
+    color: #d68a13;
+    background: #515050;
+}
+#contact-form input:focus:invalid, #contact-form textarea:focus:invalid {
+    box-shadow: 1px 0 5px 2px #cc1212;
+    border-color: #cc1212;
+    outline: none;
+    background: url(../images/invalid.png) 98% / 16px no-repeat #ccc;
+}
