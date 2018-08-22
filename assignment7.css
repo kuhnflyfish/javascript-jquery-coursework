@@ -1,0 +1,19 @@
+/*
+ * Mark Kuhn
+ * Assignment 7 - Local Storage
+ * assignment7.css
+*/
+
+body {
+    padding: 40px;
+}
+#politics {
+    padding: 40px;
+    box-shadow: 1px 1px 8px 1px;
+    width: 500px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #c5bcbc, #535365);
+}
+#errors {
+    color: red;
+}

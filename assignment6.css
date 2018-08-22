@@ -1,0 +1,35 @@
+/*
+ * Assignment 6 - AJAX and the President
+ * Mark Kuhn
+ * assignment6.css
+*/
+
+body {
+    padding: 40px;
+}
+#areaform {
+    padding: 40px;
+    box-shadow: 1px 1px 8px 1px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#drawing {
+    background: #8f8f92;
+    margin-top: 20px;
+}
+#errors {
+    color: #ff0000;
+}
+.president-table, .vice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.president-table td {
+    text-align: center;
+}
+.president-table>tr:nth-child(even) {
+    background: #dcdee4;
+}
+td.name  {
+    text-align: left;
+}

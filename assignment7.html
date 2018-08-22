@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+    Mark Kuhn
+    Assignment 7
+    assignment7.html
+-->
+<html>
+    <head>
+        <link href="assignment7.css" rel="stylesheet">    
+    </head>
+    
+    <body>
+    <!--
+     This is a sample form for use in Assignment3A, especially for those with little HTML experience.
+     This form would be included in an HTML document; it is not a full document.
+     Of course, you are welcome to build your own form, and free to reorganize the form in any sensible way you wish.
+     You should use CSS to style the form.
+
+     This particular form has the id "politics"
+     This form has 3 sections, each captured in a "fieldset"
+     A fieldset is a container with its own border and decorations, and a "legend" element which gives it a title.
+     The first fieldset captures the names inputs for the candidates
+     The second fieldset captures the vote inputs for the candidates
+     The third fieldset captures the statistical output.
+     Each field for input or output is given an ID to make it easy to find.
+     This form has room for 3 candidates
+    -->
+         <form id="politics">
+
+            <fieldset id="candidates">
+                <legend>Candidates</legend>
+
+                     <div>
+                     <label for="cand1">Candidate 1</label> 
+                     <input class="candidate" id="cand1" placeholder="Candidate"/>
+                     </div>
+
+                     <div>
+                     <label for="cand2">Candidate 2</label> 
+                     <input class="candidate" id="cand2" placeholder="Candidate"/>
+                     </div>
+
+                     <div>
+                     <label for="cand3">Candidate 3</label> 
+                     <input class="candidate" id="cand3" placeholder="Candidate"/>
+                     </div>
+
+            </fieldset>
+
+            <fieldset id="votes">
+                <legend>Votes</legend>
+
+                     <div>
+                     <label for="votes1">Votes for Candidate 1</label>
+                     <input class="count" id="votes1" placeholder="Vote count"/>
+                     </div>
+
+                     <div>
+                     <label for="votes2">Votes for Candidate 2</label>
+                     <input class="count" id="votes2" placeholder="Vote count"/>
+                     </div>
+
+                     <div>
+                     <label for="votes3">Votes for Candidate 3</label>
+                     <input class="count" id="votes3" placeholder="Vote count"/>
+                     </div>
+            </fieldset>
+
+            <fieldset id="statistics">
+                <legend>Current Results</legend>
+                     <div>
+                     <label for="date">As of </label>
+                     <input type="date" id="date"/>
+                     </div>
+                     <div>
+                     <label for="totalvotes">Total Votes counted</label>
+                     <output id="totalvotes"/>
+                     </div>
+
+                     <div>
+                     Candidate 1
+                     <label for="cand0pct">Percentage</label>
+                     <output id="cand0pct"></output>
+                     </div>
+                     <div>
+                     Candidate 2
+                     <label for="cand1pct">Percentage</label>
+                     <output id="cand1pct"></output>
+                     </div>
+                     <div>
+                     Candidate 3
+                     <label for="cand2pct">Percentage</label>
+                     <output id="cand2pct"></output>
+                     </div>
+            </fieldset>
+            <button id="calculate" type="button">Calculate</button>
+            <p id="errors"></p>
+         </form>
+        <script src="assignment7.js"></script>
+    </body>
+</html>
