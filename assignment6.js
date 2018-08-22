@@ -8,7 +8,6 @@ var allData, data, filteredData;
 var propertyNames = ['number', 'name', 'date', 'took_office', 'left_office', 'vice_president'];
 
 function timedGetPresidentData() {
-    "use strict";
     var presidentData = new XMLHttpRequest(), text;
     var url2 = "http://schwartzcomputer.com/ICT4570/Resources/USPresidents.json";
     var timeout = 3000;
@@ -33,7 +32,6 @@ function timedGetPresidentData() {
 }
 
 function buildVicePresTable(row) {
-    "use strict";
     var viceTable = document.createElement('table');
     var len = row.term.length;
     viceTable.setAttribute('class', 'vice-table');
@@ -58,7 +56,6 @@ function buildVicePresTable(row) {
 }
 
 function buildTableHeader() {
-    "use strict";
     var properties, tr, th;
     properties = ['Number', 'Name', 'Birthday', 'Took Office', 'Left Office', 'Vice President'];
     tr = document.createElement('tr');
@@ -71,7 +68,6 @@ function buildTableHeader() {
 }
 
 function buildTableBody(row, propertyNames) {
-    "use strict";
     var tr = document.createElement('tr');
     var len = propertyNames.length;
     for(let i=0; i<len; i++) {
@@ -88,7 +84,6 @@ function buildTableBody(row, propertyNames) {
 }
 
 function buildTable(data) {
-    "use strict";
     console.log("buildTable function has been called");
     var table = document.createElement('table');
     var len = data.length;
@@ -102,7 +97,6 @@ function buildTable(data) {
 }
 
 function handleJSONResponse(data) {
-    "use strict";
     var nameInput = document.getElementById('name').value;
     var dateInput = document.getElementById('took-office').value;
     if(nameInput !== '' && dateInput !== '') {
@@ -134,7 +128,6 @@ function handleJSONResponse(data) {
 }
 
 function clearForm() {
-    "use strict";
     var tableClass = document.querySelector('table.president-table');
     if(tableClass) {
         document.getElementById('president-table').removeChild(tableClass);
@@ -144,7 +137,6 @@ function clearForm() {
 }
 
 function init() {
-    "use strict";
     document.getElementById('presidents').onclick = timedGetPresidentData;
     document.getElementById('clear').onclick = clearForm;
 }
